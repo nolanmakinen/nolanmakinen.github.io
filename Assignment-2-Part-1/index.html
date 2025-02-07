@@ -106,7 +106,10 @@ Assignment 2 - Part 1
   <body>
     <header>
       <h1>Mozilla</h1>
-      <img src="img/firefox_logo-only_RGB_400px.png" alt="mozilla firefox logo.">
+      <picture>
+        <source media="(max-width: 399px)" srcset="img/firefox_logo-only_RGB_120px.png">
+        <img src="img/firefox_logo-only_RGB_400px.png" alt="mozilla firefox logo.">
+      </picture>
 
     </header>
 
@@ -124,24 +127,32 @@ Assignment 2 - Part 1
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="img/firefox_logo-only_RGB_400px.png" alt="mozilla firefox logo.">
+          <picture>
+            <source media="(max-width: 399px)" srcset="img/firefox_logo-only_RGB_120px.png">
+            <img src="img/firefox_logo-only_RGB_400px.png" alt="mozilla firefox logo.">
+          </picture>
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="img/mozilla-dinosaur-head_400px.png" alt="mozilla dinosaur head.">
+          <picture>
+            <source media="(max-width: 399px)" srcset="img/mozilla-dinosaur-head_120px.png">
+            <img src="img/mozilla-dinosaur-head_400px.png" alt="mozilla dinosaur head.">
+          </picture>
         </a>
-        <a href="https://addons.mozilla.org/">
-          <img src="img/firefox-addons_400px.jpg" alt="firefox addons graphic.">
-        </a>
+          <a href="https://addons.mozilla.org/">
+            <picture>
+              <source media="(max-width: 399px)" srcset="img/firefox-addons_120px.jpg">
+              <img src="img/firefox-addons_400px.jpg" alt="firefox addons graphic.">
+            </picture>
+          </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img src="img/mdn.svg" alt="mozilla developer logo.">
         </a>
         <div class="clearfix"></div>
       </div>
-
-      <div class="red-panda">
-        <img src="img/red-panda_1200px.jpg" alt="Photo of a red panda in a tree.">
-      </div>
-
+        <picture>
+          <source media="(max-width: 1199px)" srcset="img/red-panda_600px.jpg">
+          <img src="img/red-panda_1200px.jpg" alt="a red panda" style="width: 100%;">
+        </picture>
     </main>
   </body>
 </html>

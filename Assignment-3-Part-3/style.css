@@ -44,35 +44,103 @@ header, footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 
-@font-face {
-  font-family: "IM FELL French Canon";
-  src: url("../src/FeFCrm2.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Metropolis";
-  src: url("../src/Metropolis-Regular.otf") format("opentype");
-}
-
-p, li {
+html {
   font-family: "IM FELL French Canon", serif;
-  font-size: 10px;
-  line-height: 18px;
-  letter-spacing: 1px;
+}
+
+body {
+  font-family: "IM FELL French Canon", serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
   word-spacing: 1px;
 }
 
 header {
   text-align: center;
   font-family: "Metropolis", sans-serif;
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-size: 2.4rem;
+  letter-spacing: 0.1em;
 }
 
-h2 {
+@font-face {
+    font-family: 'IM FELL French Canon';
+    src: url('IM_FELL_French_Canon_Roman.woff2') format('woff2'),
+        url('IM_FELL_French_Canon_Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('Metropolis-Regular.woff2') format('woff2'),
+        url('Metropolis-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2 {
+  font-family: "IM FELL French Canon", serif;
   font-size: 28px;
 }
 
 .indent {
   text-indent: 20px;
+}
+
+a {
+  outline: none;
+}
+
+a:link {
+  color: #a66;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #a66;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d2691e;
+  text-decoration: none;
+}
+
+a:active {
+  color: #8B0000;
+  text-decoration: none;
+}
+
+.external-link::after {
+  content: '';
+  margin-left: 2px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('../src/external-link-52.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 1.4rem;
+}
+
+nav li a {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #a66;
+  text-decoration: none !important;
 }

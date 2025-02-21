@@ -16,8 +16,10 @@ div {
   justify-content: center;
   align-items: center;
   background: red;
-  background: ;
   color: white;
   border-radius: 1rem;
   border: 1px solid darkred;
+  background-image: linear-gradient(to top left, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0));
+  box-shadow: 2px 2px 7px black;
+  box-shadow: inset 1px 1px 6px white, inset -1px -1px 6px black;
 }

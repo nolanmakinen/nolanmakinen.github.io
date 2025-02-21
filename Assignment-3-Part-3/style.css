@@ -43,3 +43,36 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: "IM FELL French Canon";
+  src: url("../src/FeFCrm2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/Metropolis-Regular.otf") format("opentype");
+}
+
+p, li {
+  font-family: "IM FELL French Canon", serif;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+header {
+  text-align: center;
+  font-family: "Metropolis", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.indent {
+  text-indent: 20px;
+}

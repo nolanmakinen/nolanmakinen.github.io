@@ -1,5 +1,18 @@
 html {
   font-family: sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 /* Your CSS below here */
+
+div {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}

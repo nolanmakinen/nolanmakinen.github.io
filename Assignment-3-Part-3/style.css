@@ -50,7 +50,7 @@ html {
 
 body {
   font-family: "IM FELL French Canon", serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   letter-spacing: 0.5px;
   word-spacing: 1px;
@@ -65,8 +65,8 @@ header {
 
 @font-face {
     font-family: 'IM FELL French Canon';
-    src: url('IM_FELL_French_Canon_Roman.woff2') format('woff2'),
-        url('IM_FELL_French_Canon_Roman.woff') format('woff');
+    src: url('src/IM_FELL_French_Canon_Roman.woff2') format('woff2'),
+        url('src/IM_FELL_French_Canon_Roman.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -74,8 +74,8 @@ header {
 
 @font-face {
     font-family: 'Metropolis';
-    src: url('Metropolis-Regular.woff2') format('woff2'),
-        url('Metropolis-Regular.woff') format('woff');
+    src: url('src/Metropolis-Regular.woff2') format('woff2'),
+        url('src/Metropolis-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -87,7 +87,7 @@ h1 {
 
 h1, h2 {
   font-family: "IM FELL French Canon", serif;
-  font-size: 28px;
+  font-size: 3rem;
 }
 
 .indent {
@@ -129,7 +129,7 @@ a:active {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-image: url('../src/external-link-52.png');
+  background-image: url('src/external-link-52.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -144,7 +144,7 @@ nav li a {
   width: 100%;
   padding: 1rem;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.2rem;
   border: 1px solid #a66;
   text-decoration: none !important;
 }

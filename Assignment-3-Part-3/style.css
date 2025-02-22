@@ -81,6 +81,10 @@ header {
     font-display: swap;
 }
 
+h1 {
+  text-align: center;
+}
+
 h1, h2 {
   font-family: "IM FELL French Canon", serif;
   font-size: 28px;
@@ -143,4 +147,9 @@ nav li a {
   font-size: 12px;
   border: 1px solid #a66;
   text-decoration: none !important;
+}
+
+nav li a:hover {
+  background-color: #d2691e;
+  color: #8B0000;
 }

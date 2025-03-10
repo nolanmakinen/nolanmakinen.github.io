@@ -1,3 +1,8 @@
+// Name: Nolan Makinen
+// File: main.js
+// Date: March 10 2024
+// Assignment 4 - Part 1
+
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');

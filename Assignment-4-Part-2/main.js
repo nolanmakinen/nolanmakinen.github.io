@@ -18,6 +18,10 @@ images.forEach((image, index) => {
 	const imgPath = `images/${image}`;
 	newImage.setAttribute('src', imgPath);
 	newImage.setAttribute('alt', altText[index]);
+	newImage.addEventListener('click', () => {
+		displayedImage.setAttribute('src', imgPath);
+		displayedImage.setAttribute('alt', altText[index]);
+	})
 	thumbBar.appendChild(newImage);
 })
 

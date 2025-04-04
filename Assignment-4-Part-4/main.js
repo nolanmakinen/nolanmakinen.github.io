@@ -176,19 +176,5 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-// Animation loop
-function loop() {
-  ctx.fillStyle = "rgba(0, 0, 0, 0.25)"; // Use rgba for transparency
-  ctx.fillRect(0, 0, width, height);
-
-  for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect(balls); // Call collision detection for each ball
-  }
-
-  requestAnimationFrame(loop);
-}
-
 // Start the animation loop
 loop();

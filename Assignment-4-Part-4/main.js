@@ -5,6 +5,8 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+const ballCount = document.getElementById('ball-count');
+
 // function to generate random number
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -134,6 +136,7 @@ class EvilCircle extends Shape {
 
          if (distance < this.size + ball.size) {
               ball.exists = false;
+
         }
       }
     }
@@ -166,13 +169,18 @@ function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)"; // Use rgba for transparency
   ctx.fillRect(0, 0, width, height);
 
+  let count = 0;
+
   for (const ball of balls) {
     if (ball.exists) {
       ball.draw();
     ball.update();
     ball.collisionDetect(balls); // Call collision detection for each ball
+    count++;
     }
   }
+
+  ballCount.textContent = `Ball count: ${count}`;
 
   evilBall.draw();
   evilBall.checkBounds();
